@@ -14,29 +14,8 @@ Submission [12/01]
 
 I will be initializing the board size to be 8 x 8.
 
-For P and T, I will use 4 pokemon and 4 trainers which shall pass as static value in docker-compose file.
+For P and T, I will provide the user to enter no. of pokemons and no. of trainers.
 
-I will provide user with list of emojis to choose Pokemon and trainer. The user will choose through command line arguments.
+I will generate docker-compose.yaml dynamically for P pokemon and T trainers using python code. 
 
-Emojis for Pokemon:
-
-🐍 Snake
-
-🦅 Eagle
-
-🦄 Unicorn
-
-🐻‍❄️ Polar Bear
-
-
-Emojis for Trainer:
-
-👺 Goblin
-
-👻 Ghost
-
-👽 Alien
-
-🤖 Robot
-
-
+List of emojis will be provided to user to choose pokemon and trainers through command line argument.
