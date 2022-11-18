@@ -81,7 +81,7 @@ After running this, the terminal will prompt the user to enter no. of pokemons a
 
 After generation of docker-compose.yml, based on the input of board size and no.of pokemons and trainers, I am generating a gameboard with assigning the pokemon and trainer emojis randomly to random positions in my NxN board.
   
-#Explanation: Below is the Gif, where when composing docker-compose.yml file, user has given input in terminal for board size as 8.  No. of trainers = 4, pokemons=5. Each trainer and pokemon emojis are assigned in distinct random positions and the empty positions are displayed as 'None'. 
+#Explanation: Below is the Gif. When composing docker-compose.yml file, user has given input in terminal for board size as 8,  No. of trainers = 4, pokemons=5. After building docker compose, Each trainer and pokemon emojis are assigned in distinct random positions on a board size of 8x8, and the empty positions are displayed as 'None'. 
 
 ![Recording-proj](https://user-images.githubusercontent.com/114453047/202621362-55886aa2-b784-4167-b298-cb03890fef08.gif)
 
