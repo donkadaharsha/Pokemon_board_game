@@ -52,27 +52,19 @@ pokemonou.proto - the proto buffer file containig the rpc functions used to comm
 Captured() --  takes input as pokemonName and returns the feedback "pokemonName" when captured.
 Moves() --  takes input as stream of player and returns stream Feedback that says where the move is i.e., the row and column specification.
 Board() -- takes BoardConfig as input and returns BoardConfig.
-
-trainer.proto - the proto buffer file cotaining rpc functions related to trainer.
-
-# Functions in trainer.proto file:
 Capture()- takes Feedback as input and returns feedback as successul if a pokemon was in space where the trainer is.
 Checkboard() - Takes input as BoardConfig and returns MoveDirection (Up,down,right,left,north east, south east, north west, south west)
 Move() - This for the trainer to make the move in a direction(Up,down,right,left,north east, south east, north west, south west)
 Pokdex() - It returns the list of captured pokemons
 Path() - It returns the list of moves made by trainer.
-
-pokemon.proto - The proto buffer containing rpc functions related to activities of the pokemon.
-
-# Functions in pokemon.proto file:
 Checkboard() - Takes input as BoardConfig and returns Move direction(Up,down,right,left,north east, south east, north west, south west)
-Move - this is for pokemon to make the move(Up,down,right,left,north east, south east, north west, south west)
+Move() - this is for pokemon to make the move(Up,down,right,left,north east, south east, north west, south west)
 Trainer() Takes input as trainerName and returns TrainerInfo containing the pokemon name which trainer captured and when and where it was captured
 
 
 # Testing for functions:
 RUN python3 -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. pokemonou.proto 
-The command will be run for proto to create 2 files - pokemon_pb2_grpc.py, pokeon_pb2.py
+The command will be run for proto to create 2 files - pokemonou_pb2_grpc.py, pokemonou_pb2.py
 These files will contain stubs that will be implemented on pokemon and trainers and send the input for Captured moves and Board rpc functions and the server will respond back.
 
 
@@ -84,5 +76,12 @@ docker build .
 docker run -it -v $(pwd):/usr/src/app <imageid>          # -it is the terminal interactive session for user to provide inputs.
 
 After running this, the terminal will prompt the user to enter no. of pokemons and no. of trainers. After user provides the input, it generates the clients in docker-compose.yml file.
+
+##boardgame.gif
+
+After generation of docker-compose.yml, based on the input of board size and no.of pokemons and trainers, I am generating a gameboard with assigning the pokemon and trainer emojis randomly to random positions in my NxN board.
+
+
+
 
 
