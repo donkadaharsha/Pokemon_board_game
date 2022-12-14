@@ -60,6 +60,11 @@ Below is the GIF of the final board with all functionalities. The blank spaces a
 
 
 
+![Screen_Recording_2022-12-14_at_3_52_24_AM_AdobeExpress (1)](https://user-images.githubusercontent.com/114453047/207621823-84d10ea8-cbed-4f0d-a60d-e7308269ff8c.gif)
+
+
+
+
 
 
 
