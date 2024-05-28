@@ -1,4 +1,3 @@
-### cs5113fa22-project -- FINAL
 ### TITLE-POKEMONOU
 
 ## Description
